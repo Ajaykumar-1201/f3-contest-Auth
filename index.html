@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Signup Page</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="form">
+
+    <p class="welcome">welcome back! </p>
+    <h2>Sign up to your account</h2>
+    <p>Your name</p>
+      <input type="text" id="name" class="left" placeholder="Full Name" required>
+      <p>Your email</p>
+    
+      <input type="email" id="email" class="left" placeholder="Email" required>
+      <p>Password</p>
+    
+      <input type="password" id="password" class="left" placeholder="Password" required>
+    
+      <p>Confirm Password</p>
+    
+      <input type="password" id="confirmPassword" class="left" placeholder="Confirm Password" required>
+    
+    <button type="submit" id="submit-btn">CONTINUE</button>
+
+    <!-- Error/Success Elements -->
+    <div class="alert">
+      <div class="hidden" id="success" style="color: green;">
+         Successfully Signed Up
+      </div>
+      <div class="hidden" id="error" style="color: red;">
+        Error:  All fields are mandatory 
+      </div>
+      <div class="hidden" id="passwordMismatched" style="color: red;">
+        Error:  Password not Matching. Please enter correct password 
+      </div>
+      <div class="hidden" id="invalidEmail" style="color: red;">
+        Error: Invalid email id. Please enter correct email id 
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
